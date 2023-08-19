@@ -1,0 +1,113 @@
+:root{
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.display_flex{
+    display: flex;
+}
+.display_flex_col{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+
+@font-face {
+    font-family: 'poppinsregular';
+    src: url('file:///sdcard/hospitalUI/hospitalData/poppins-regular-webfont.woff2') format('woff2'),
+         url('file:///sdcard/hospitalUI/hospitalData/poppins-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+html{
+    font-family: 'poppinsregular';
+  text-align: center;
+
+}
+body{
+    height: 100vh;
+}
+.wrapper{
+    height: 100%;
+    width: 100%;
+    padding: calc(20/1920 * 100vw);
+}
+.container{
+    max-width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    justify-content: space-evenly;
+}
+.container div{
+    width: 100%;
+}
+
+.container .first_div{
+    height: 18%;
+}
+.container .first_div div:nth-child(1){
+    height: 81%;
+}
+.container .first_div div:nth-child(1) img{
+    width: 28%;
+    max-width: 266px;
+    height: 100%;
+    max-height: 266px;
+    margin: 0 auto;
+    display: block;
+}
+.container .first_div div:nth-child(2){
+    background: #5b8cd8;
+    padding: 10px;
+height: 19%;
+}
+.container .first_div div:nth-child(2) p{
+  font-size: calc(36/1080 * 100vw);
+color: white;
+
+}
+
+.container .second_div{
+    height: 3%;
+    background: #164f9e;
+    border-radius: 2px;
+    color: white;
+
+}
+.container .second_div p{
+    padding: calc(10/1080 * 100vw);
+}
+.container  .second_div p,
+.container  .third_div div p
+{
+    width: 26.6%;
+    font-size: calc(34/1080 * 100vw);
+
+}
+.container  .second_div p:nth-child(1),
+.container  .third_div div p:nth-child(1)
+{
+    max-width: 7%;
+}
+.container  .second_div p:nth-child(2),
+.container  .third_div div p:nth-child(2)
+{
+    max-width: 13%;
+}
+.container .third_div{
+    height: 72%;
+    border-radius: 2px;
+
+}
+
+.container .third_div div p{
+   padding: calc(12/1080 * 100vw);
+}
